@@ -129,5 +129,88 @@ public class Main {
                 else {
                     System.out.println("БОльшее число из приведенных равно " + free);
                 }
-            }
+
+                //Начало второй части темы
+
+                System.out.println("Первое задание");
+
+                int clientOs = 1;
+                if ( clientOs == 0) {
+                    System.out.println("Установите версию приложения для iOS по ссылке");
+                }
+                else {
+                    System.out.println("Установите версию приложения для Android по ссылке");
+                }
+
+                System.out.println("Второе задание");
+
+                int clientOs1 = 1;
+                int clientDeviceYear = 2014;
+                if ( clientOs1 == 0) {
+                    if (clientDeviceYear >= 2015) {
+                        System.out.println("Установите новую версию приложения для iOS по ссылке");
+                    } else System.out.println("Установите облегченную версию приложения для iOS по ссылке");
+                }
+                else if (clientOs1 == 1) {
+                    if (clientDeviceYear >= 2015) {
+                        System.out.println("Установите новую версию приложения для Android по ссылке");
+                    } else System.out.println("Установите облегченную версию приложения для Android по ссылке");
+                }
+                else System.out.println("Приложения для вашего устройства не существует");
+
+                System.out.println("Третье задание");
+
+                int year = 2020;
+                int yearCheck4 = year % 4;
+                int yearCheck100 = year % 100;
+                int yearCheck400 = year % 400;
+                if ((yearCheck100 == 0 || yearCheck4 != 0) && yearCheck400 != 0) {
+                    System.out.println( year + " год не високосный");
+                } else {
+                    System.out.println( year + " год високосный");
+                }
+
+                System.out.println("Четвертое задание");
+
+                int deliveryDistance = 95;
+                int deliveryDays = 1;
+                if (deliveryDistance > 20) {
+                    deliveryDays ++;
+                }
+                if (deliveryDistance > 60) {
+                    deliveryDays ++;
+                }
+                if (deliveryDistance > 100) {
+                    deliveryDays ++;
+                }
+                System.out.println("Ваша доставка прибудет в течение " + deliveryDays);
+
+                System.out.println("Пятое задание");
+
+                int monthNumber = 12;
+                switch (monthNumber) {
+                    case 12:
+                    case 1:
+                    case 2:
+                        System.out.println("Сейчас зимний сезон");
+                        break;
+                    case 3:
+                    case 4:
+                    case 5:
+                        System.out.println("Сейчас весенний сезон");
+                        break;
+                    case 6:
+                    case 7:
+                    case 8:
+                        System.out.println("Сейчас летний сезон");
+                        break;
+                    case 9:
+                    case 10:
+                    case 11:
+                        System.out.println("Сейчас осенний сезон");
+                        break;
+                    default:
+                        System.out.println("Такого месяца не существует");
+                }
+                }
         }
